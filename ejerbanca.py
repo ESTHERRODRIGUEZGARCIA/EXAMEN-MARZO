@@ -95,20 +95,29 @@ class cuentabancaria():
             print("HAs ingresado ", dineroingresado, " €")
             self.saldo += dineroingresado
             print("Su saldo ahora es de ", self.saldo, " €")
-        nuevaop = int(input("¿Quiere realizar más operaciones?/nSí: pulse 1 /nNo: pulse 2 "))
-        if nuevaop == 1:
-            pass #falta algo!!!
-        else:
-            exit()
+            nuevaop = int(input("¿Quiere realizar más operaciones?/nSí: pulse 1 /nNo: pulse 2 "))
+            if nuevaop == 1:
+                pass #falta algo!!!
+            else:
+                exit()
 
-    def TRANSFERIR(self):
-        dinerotransferido = int(input("Ha elegido transferir dinero a otra cuenta. ¿Cuánto desea transferir?"))
-        if dinerotransferido <= self.saldo:
-            print("HAn sido transferidos ", dinerotransferido, " € a la segunda cuenta (VIP).")
-            A.saldo -= dinerotransferido
-            E.saldo += dinerotransferido
-            print("El saldo actual de la primera cuenta es de ", A.saldo, " €")
-            print("El saldo actual de la segunda cuenta es de ", E.saldo, " €")
+    def TRANSFERIR(self): #hay que hacer dos bucles pues si retiras de E a A eres penalizado
+        aoe= int(input("Ha elegido transferir dinero. Desea transferir de su cuenta principal a su cuenta VIP?\npulse 1 (si)\npulse 2(operación contraria)"))
+        if aoe == 1:
+            dinerotransferido = int(input("Ha elegido transferir dinero a su segunda cuenta. ¿Cuánto desea transferir?"))
+            if dinerotransferido <= self.saldo:
+                print("HAn sido transferidos ", dinerotransferido, " € a la segunda cuenta (VIP).")
+                A.saldo -= dinerotransferido
+                E.saldo += dinerotransferido
+                print("El saldo actual de la primera cuenta es de ", A.saldo, " €")
+                print("El saldo actual de la segunda cuenta es de ", E.saldo, " €")
+                nuevaop = int(input("¿Quiere realizar más operaciones?/nSí: pulse 1 /nNo: pulse 2 "))
+                if nuevaop == 1:
+                    pass #falta algo!!!
+                else:
+                    exit()
+        else:
+
 
 
 
