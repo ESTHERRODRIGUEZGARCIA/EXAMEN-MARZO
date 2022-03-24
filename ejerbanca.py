@@ -27,7 +27,9 @@ class cuentabancaria():
         print("La segunda cuenta ha sido asociada a una cuenta VIP. También tiene un saldo inicial de 10.000 € ")
 
     crearcuenta()
-
+    def RETIRAR():
+        dineroretirado=int(input("Usted ha elegido retirar dinero./n¿Cuánto desea retirar de su cuenta?: "))
+        
 
 
 
