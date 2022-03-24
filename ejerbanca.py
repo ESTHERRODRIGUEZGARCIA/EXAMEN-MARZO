@@ -49,7 +49,7 @@ class cuentabancaria():
         nombre = str(input("Introduzca su nombre por favor: "))
         global A
         global E
-        modo = int(input("Elija que cuenta desea crear: \n1. Cuenta a plazo fijo\n2 : Cuenta VIP "))
+        modo = int(input("Elija que cuenta desea crear: \n1. Cuenta a plazo fijo\n2 : Cuenta VIP \n"))
         numero = str(random.randint(100000000000, 999999999999))
         now = datetime.now()
         A = cuentabancaria(str(random.randint(100000, 999999)), nombre, datetime.now(),numero, 10000, modo)
@@ -58,6 +58,7 @@ class cuentabancaria():
         print("La segunda cuenta ha sido asociada a una cuenta VIP. También tiene un saldo inicial de 10.000 € ")
 
     crearcuenta()
+cuentabancaria()
 
 
     def metodo(): #aquí me pedira retirar ingresar o transferir
@@ -79,7 +80,7 @@ class cuentabancaria():
         if dineroretirado > 0  and dineroretirado <= self.saldo:
             print("Han sido retirados ", dineroretirado, " €.")
             print("Ctualmente dispone de un saldo de ", self.saldo, " €.")
-            nuevaop = int(input("¿Quiere realizar más operaciones?/nSí: pulse 1 /nNo: pulse 2 "))
+            nuevaop = int(input("¿Quiere realizar más operaciones?/nSí: pulse 1 /nNo: pulse 2\n "))
             if nuevaop == 1:
                 operacion = int(input("Introduzca que operacion va a realizar en su cuenta bancaria: /n1. Retirar/n2. Ingresar/n3. Transferir "))
                 if operacion == 1:
