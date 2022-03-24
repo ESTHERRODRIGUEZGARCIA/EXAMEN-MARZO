@@ -60,7 +60,7 @@ class cuentabancaria():
     crearcuenta()
 
 
-    def RETIRAR():
+    def RETIRAR(self):
         dineroretirado=int(input("Usted ha elegido retirar dinero./n¿Cuánto desea retirar de su cuenta?: "))
         if dineroretirado > 0  and dineroretirado <= self.saldo:
             print("Han sido retirados ", dineroretirado, " €.")
