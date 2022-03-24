@@ -70,7 +70,7 @@ class cuentabancaria():
             cuentabancaria.TRANSFERIR(A)
         else:
             print("Hasta pronto. ")
-        
+
     metodo()
 
 
@@ -89,6 +89,12 @@ class cuentabancaria():
             print("Lo sentimos. No puede retirar más dinero del que tiene su cuenta.Introduzca correctamente cuánto quiere retirar de su cuenta.")
             cuentabancaria.RETIRAR(A)
 
+    def INGRESAR(self):
+        dineroingresado=int(input("Usted ha elegido ingresar dinero./n¿Cuánto desea ingresar a su cuenta?: "))
+        if dineroingresado > 0:
+            
+
 cuentabancaria()
+
 
 
