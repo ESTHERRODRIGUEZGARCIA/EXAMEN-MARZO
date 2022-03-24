@@ -6,7 +6,7 @@ from datetime import datetime
 class cuentabancaria():
 
 
-    def __init__(self, id, fecha, nombre, modo, saldo):
+    def __init__(self, id, fecha, nombre, saldo, modo):
         self.id = id
         self.fecha = fecha
         self.nombre = nombre
