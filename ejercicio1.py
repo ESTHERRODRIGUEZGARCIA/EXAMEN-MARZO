@@ -7,16 +7,19 @@ class libro():
         self.pags = pags
         self.genero = genero
 
-    def nombre(self):
+    def nombre(self, nombre):
         print("Título: Vivencias en Villanueva de la Cañada Siglo XXI")
-    def autor(self):
+
+    def autor(self,autor):
         autor = int("Autor: Esther Rodríguez García")
 
-    def fecha(self):
+    def fecha(self,fecha):
         print("FEcha de publicación: 28 de Diciembre 2003 ")
 
-    def pags(self):
+    def pags(self,pags):
         print("Número de páginas: 1028")
 
-    def genero(self):
+    def genero(self,genero):
         print("Género: Estudiante de ingeniería matemática. Universidad Alfonso X El Sabio.")
+
+libro()
