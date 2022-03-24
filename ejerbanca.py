@@ -49,7 +49,7 @@ class cuentabancaria():
         nombre = str(input("Introduzca su nombre por favor: "))
         global A
         global E
-        modo = int(input("1. Cuenta a plazo fijo/n2 : Cuenta VIP "))
+        modo = int(input("Elija que cuenta desea crear: \n1. Cuenta a plazo fijo\n2 : Cuenta VIP "))
         numero = str(random.randint(100000000000, 999999999999))
         now = datetime.now()
         A = cuentabancaria(str(random.randint(100000, 999999)), nombre, datetime.now(),numero, 10000, modo)
@@ -132,6 +132,6 @@ class cuentabancaria():
 
 
 
-    cuentabancaria()
+cuentabancaria()
 
 
