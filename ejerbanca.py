@@ -41,7 +41,7 @@ class cuentabancaria():
         self.saldo = saldo
 
     def getsaldo(self):
-            return self.saldo
+        return self.saldo
 
 
     def crearcuenta():
@@ -71,7 +71,7 @@ class cuentabancaria():
         else:
             print("Hasta pronto. ")
 
-    metodo()
+
 
 
     def RETIRAR(self):
@@ -81,7 +81,15 @@ class cuentabancaria():
             print("Ctualmente dispone de un saldo de ", self.saldo, " €.")
             nuevaop = int(input("¿Quiere realizar más operaciones?/nSí: pulse 1 /nNo: pulse 2 "))
             if nuevaop == 1:
-                metodo()
+                operacion = int(input("Introduzca que operacion va a realizar en su cuenta bancaria: /n1. Retirar/n2. Ingresar/n3. Transferir "))
+                if operacion == 1:
+                    cuentabancaria.RETIRAR(A)
+                if operacion == 2:
+                    cuentabancaria.INGRESAR(A)
+                if operacion == 3:
+                    cuentabancaria.TRANSFERIR(A)
+                else:
+                    print("Hasta pronto. ")
             else:
                 exit()
 
@@ -97,7 +105,15 @@ class cuentabancaria():
             print("Su saldo ahora es de ", self.saldo, " €")
             nuevaop = int(input("¿Quiere realizar más operaciones?/nSí: pulse 1 /nNo: pulse 2 "))
             if nuevaop == 1:
-                metodo()
+                operacion = int(input("Introduzca que operacion va a realizar en su cuenta bancaria: /n1. Retirar/n2. Ingresar/n3. Transferir "))
+                if operacion == 1:
+                    cuentabancaria.RETIRAR(A)
+                if operacion == 2:
+                    cuentabancaria.INGRESAR(A)
+                if operacion == 3:
+                    cuentabancaria.TRANSFERIR(A)
+                else:
+                    print("Hasta pronto. ")
             else:
                 exit()
 
@@ -113,7 +129,15 @@ class cuentabancaria():
                 print("El saldo actual de la segunda cuenta es de ", E.saldo, " €")
                 nuevaop = int(input("¿Quiere realizar más operaciones?/nSí: pulse 1 /nNo: pulse 2 "))
                 if nuevaop == 1:
-                    metodo()
+                    operacion = int(input("Introduzca que operacion va a realizar en su cuenta bancaria: /n1. Retirar/n2. Ingresar/n3. Transferir "))
+                    if operacion == 1:
+                        cuentabancaria.RETIRAR(A)
+                    if operacion == 2:
+                        cuentabancaria.INGRESAR(A)
+                    if operacion == 3:
+                        cuentabancaria.TRANSFERIR(A)
+                    else:
+                        print("Hasta pronto. ")
                 else:
                     exit()
         else:
@@ -126,7 +150,15 @@ class cuentabancaria():
                 print("El saldo de su primera cuenta es de ", E.saldo, " €")
                 nuevaop = int(input("¿Quiere realizar más operaciones?/nSí: pulse 1 /nNo: pulse 2 "))
                 if nuevaop == 1:
-                    metodo()
+                    operacion = int(input("Introduzca que operacion va a realizar en su cuenta bancaria: /n1. Retirar/n2. Ingresar/n3. Transferir "))
+                    if operacion == 1:
+                        cuentabancaria.RETIRAR(A)
+                    if operacion == 2:
+                        cuentabancaria.INGRESAR(A)
+                    if operacion == 3:
+                        cuentabancaria.TRANSFERIR(A)
+                    else:
+                        print("Hasta pronto. ")
                 else:
                     exit()
 
