@@ -101,6 +101,16 @@ class cuentabancaria():
         else:
             exit()
 
-cuentabancaria()
+    def TRANSFERIR(self):
+        dinerotransferido = int(input("Ha elegido transferir dinero a otra cuenta. ¿Cuánto desea transferir?"))
+        if dinerotransferido <= self.saldo:
+            print("HAn sido transferidos ", dinerotransferido, " € a la segunda cuenta (VIP).")
+            A.saldo -= dinerotransferido
+            E.saldo += dinerotransferido
+            print("El saldo actual de la primera cuenta es de ", A.saldo, " €")
+            print("El saldo actual de la segunda cuenta es de ", E.saldo, " €")
 
+
+
+cuentabancaria()
 
