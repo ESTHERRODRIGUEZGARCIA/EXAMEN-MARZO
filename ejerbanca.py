@@ -62,7 +62,16 @@ class cuentabancaria():
 
     def metodo(): #aquí me pedira retirar ingresar o transferir
         operacion = int(input("Introduzca que operacion va a realizar en su cuenta bancaria: /n1. Retirar/n2. Ingresar/n3. Transferir "))
-
+        if operacion == 1:
+            cuentabancaria.RETIRAR(A)
+        if operacion == 2:
+            cuentabancaria.INGRESAR(A)
+        if operacion == 3:
+            cuentabancaria.TRANSFERIR(A)
+        else:
+            print("Hasta pronto. ")
+        
+        metodo()
 
 
     def RETIRAR(self):
@@ -81,6 +90,5 @@ class cuentabancaria():
             cuentabancaria.RETIRAR(A)
 
 cuentabancaria()
-
 
 
