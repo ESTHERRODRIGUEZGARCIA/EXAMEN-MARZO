@@ -92,9 +92,10 @@ class cuentabancaria():
     def INGRESAR(self):
         dineroingresado=int(input("Usted ha elegido ingresar dinero./n¿Cuánto desea ingresar a su cuenta?: "))
         if dineroingresado > 0:
-            
+            print("HAs ingresado ", dineroingresado, " €")
+            self.saldo += dineroingresado
+            print("Su saldo ahora es de ", self.saldo, " €")
 
 cuentabancaria()
-
 
 
