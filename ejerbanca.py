@@ -60,6 +60,11 @@ class cuentabancaria():
     crearcuenta()
 
 
+    def metodo(): #aquí me pedira retirar ingresar o transferir
+        operacion = int(input("Introduzca que operacion va a realizar en su cuenta bancaria: /n1. Retirar/n2. Ingresar/n3. Transferir "))
+
+
+
     def RETIRAR(self):
         dineroretirado=int(input("Usted ha elegido retirar dinero./n¿Cuánto desea retirar de su cuenta?: "))
         if dineroretirado > 0  and dineroretirado <= self.saldo:
@@ -76,4 +81,6 @@ class cuentabancaria():
             cuentabancaria.RETIRAR(A)
 
 cuentabancaria()
+
+
 
