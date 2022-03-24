@@ -24,5 +24,5 @@ class cuentabancaria():
         A = cuentabancaria(str(random.randint(100000, 999999)), nombre, datetime.now(),numero, 10000, modo)
         print("Hola " + nombre + ". Ha creado una cuenta el día " + str(datetime.now()) + " con el número de cuenta: " + numero)
         E = cuentabancaria(str(random.randint(100000, 999999)), "Segunda cuenta", datetime.now(), str(random.randint(100000000000, 999999999999)), 10000, 5)
-        print("La segunda cuenta con la que va a poder operar ha sido creada por defecto a nombre de Esther, con un saldo también de 10000 euros y fue creada el 15/07/2014, es una cuenta VIP")
+        print("La segunda cuenta ha sido asociada a una cuenta VIP. También tiene un saldo inicial de 10.000 € ")
 
