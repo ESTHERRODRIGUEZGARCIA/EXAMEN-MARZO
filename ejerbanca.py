@@ -95,6 +95,11 @@ class cuentabancaria():
             print("HAs ingresado ", dineroingresado, " €")
             self.saldo += dineroingresado
             print("Su saldo ahora es de ", self.saldo, " €")
+        nuevaop = int(input("¿Quiere realizar más operaciones?/nSí: pulse 1 /nNo: pulse 2 "))
+        if nuevaop == 1:
+            pass #falta algo!!!
+        else:
+            exit()
 
 cuentabancaria()
 
