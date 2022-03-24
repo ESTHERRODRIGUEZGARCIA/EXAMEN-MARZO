@@ -71,7 +71,7 @@ class cuentabancaria():
         else:
             print("Hasta pronto. ")
         
-        metodo()
+    metodo()
 
 
     def RETIRAR(self):
