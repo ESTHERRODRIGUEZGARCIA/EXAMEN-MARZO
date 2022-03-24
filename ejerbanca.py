@@ -81,7 +81,7 @@ class cuentabancaria():
             print("Ctualmente dispone de un saldo de ", self.saldo, " €.")
             nuevaop = int(input("¿Quiere realizar más operaciones?/nSí: pulse 1 /nNo: pulse 2 "))
             if nuevaop == 1:
-                pass #falta algo!!!
+                metodo()
             else:
                 exit()
 
@@ -97,7 +97,7 @@ class cuentabancaria():
             print("Su saldo ahora es de ", self.saldo, " €")
             nuevaop = int(input("¿Quiere realizar más operaciones?/nSí: pulse 1 /nNo: pulse 2 "))
             if nuevaop == 1:
-                pass #falta algo!!!
+                metodo()
             else:
                 exit()
 
@@ -113,13 +113,25 @@ class cuentabancaria():
                 print("El saldo actual de la segunda cuenta es de ", E.saldo, " €")
                 nuevaop = int(input("¿Quiere realizar más operaciones?/nSí: pulse 1 /nNo: pulse 2 "))
                 if nuevaop == 1:
-                    pass #falta algo!!!
+                    metodo()
                 else:
                     exit()
         else:
+            dinerotransferido = int(input("Ha elegido transferir dinero a su primera cuenta. ¿Cuánto desea transferir?"))
+            if (dinerotransferido + dinerotransferido*0.05)<= self.saldo:
+                print("Has transferido ", dinerotransferido, " €")
+                A.saldo += dinerotransferido - dinerotransferido*0.05
+                E.saldo -= dinerotransferido - dinerotransferido*0.05
+                print("El saldo de su primera cuenta es de ", A.saldo, " €")
+                print("El saldo de su primera cuenta es de ", E.saldo, " €")
+                nuevaop = int(input("¿Quiere realizar más operaciones?/nSí: pulse 1 /nNo: pulse 2 "))
+                if nuevaop == 1:
+                    metodo()
+                else:
+                    exit()
 
 
 
+    cuentabancaria()
 
-cuentabancaria()
 
